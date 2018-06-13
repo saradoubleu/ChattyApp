@@ -1,3 +1,35 @@
 h1 {
-  color: tomato;
+  color: black;
+}
+
+header {
+  background-color: tomato;
+  border-bottom: solid black thin;
+  height: 5em;
+}
+
+#chat-box{
+  position: fixed;
+  bottom: 0;
+  background-color: tomato;
+  width: 100%;
+  padding: 2em;
+  height: 2.5em;
+  border: solid black thin;
+}
+
+input{
+  height: 4em;
+  border: black solid thin;
+  font-size: 100%;
+}
+
+#chat-box{
+  .nameInput{
+    width: 30%;
+  }
+  .messageInput{
+    margin-left: 3em;
+    width: 50%;
+  }
 }
