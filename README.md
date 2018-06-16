@@ -2,8 +2,7 @@
 
 A real time chat application built using ReactJS. Chatty app allows users to communicate with each other without having to register accounts. 
 
-## UI
-
+## Design
 !["Screenshot of the Chatty real-time web app"](https://github.com/saradoubleu/ChattyApp/blob/master/docs/mainWindow.png)
 
 !["Screenshot of the Side by side communication"](https://github.com/saradoubleu/ChattyApp/blob/master/docs/twoWindows.png)
