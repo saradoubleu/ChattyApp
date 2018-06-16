@@ -1,4 +1,4 @@
-#Chatty Application
+# Chatty Application
 =====================
 
 A real time chat application built using ReactJS. Chatty app allows users to communicate with each other without having to register accounts. 
@@ -9,14 +9,14 @@ A real time chat application built using ReactJS. Chatty app allows users to com
 
 !["Screenshot of the Side by side communication"](https://github.com/saradoubleu/ChattyApp/blob/master/docs/twoWindows.png)
 
-## Dependencies
+### Dependencies
 * React
 * Webpack
 * [babel-loader](https://github.com/babel/babel-loader)
 * [webpack-dev-server](https://github.com/webpack/webpack-dev-server)
 
 
-## Getting Started
+### Getting Started
 - install all dependencies (using `npm install` command).
 - start the server using `npm start`
 - Using a web browser navigate to http://localhost:3000
