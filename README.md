@@ -1,5 +1,4 @@
 # Chatty Application
-=====================
 
 A real time chat application built using ReactJS. Chatty app allows users to communicate with each other without having to register accounts. 
 
