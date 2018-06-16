@@ -1,35 +1,106 @@
-h1 {
-  color: black;
-}
-
-header {
-  background-color: tomato;
-  border-bottom: solid black thin;
-  height: 5em;
-}
-
-#chat-box{
-  position: fixed;
-  bottom: 0;
-  background-color: tomato;
-  width: 100%;
-  padding: 2em;
-  height: 2.5em;
-  border: solid black thin;
-}
-
-input{
-  height: 4em;
-  border: black solid thin;
-  font-size: 100%;
-}
-
-#chat-box{
-  .nameInput{
-    width: 30%;
+body {
+    margin: 70px 0;
   }
-  .messageInput{
-    margin-left: 3em;
-    width: 50%;
+
+  .chatbar {
+    background: tomato;
+    border-top: 1px solid black;
+    bottom: 0;
+    display: flex;
+    left: 0;
+    padding: 5px;
+    position: fixed;
+    right: 0;
   }
-}
+
+  .chatbar-message{
+    border: 1px solid black;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    margin: 5px;
+    padding: 0 9px;
+        flex: 8;
+  }
+  
+  .chatbar-username {
+    border: 1px solid black;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    margin: 5px;
+    padding: 0 9px;
+  }
+  .message {
+    display: flex;
+    padding: 3px;
+  }
+
+  .showMessage.show {
+    font-style: italic;
+    padding: 5px 20px;
+    display: block;
+  }
+
+  .showMessage.hidden {
+    font-style: italic;
+    padding: 5px 20px;
+    display: none;
+  }
+
+  .message-content{
+    overflow: hidden;
+    margin: 5px;
+    padding: 0 10px;
+  }
+  .message-username {
+    overflow: hidden;
+    margin: 5px;
+    padding: 0 10px;
+  }
+
+  .message-content.show {
+    flex: 8;
+    display: block;
+  }
+
+  .message-username.show {
+    flex: 2;
+    font-weight: 700;
+    display: block;
+  }
+
+  .message-content.hidden {
+    flex: 8;
+    display: none;
+  }
+
+  .message-username.hidden {
+    flex: 2;
+    font-weight: 700;
+    display: none;
+  }
+
+  .nav-bar {
+    background: tomato;
+    border-bottom: 1px solid black;
+    height: 80px;
+    padding: 0 10px;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+  }
+
+  .chatty-title{
+    display: block;
+    float: left;
+    font-size: 40px;
+  }
+
+    .navbar-counter {
+    display: block;
+    float: right;
+    font-weight: normal;
+    font-size: 17px;
+  }

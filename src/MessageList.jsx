@@ -1,18 +1,23 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
+import Message from './Message.jsx';
 
-/*
-Task: Pass the messages as a prop to MessageList. Use a loop inside the MessageList component to render one Message component for each message.
-*/
-
-//this.props.messages
+//MessageList Comp - renders log of messages associated with each user
 class MessageList extends Component {
-    render(){ 
-        const message = this.props.messages.map((msg, index) => 
+    render() {
+        console.log("Render MessageList component");
+        const message = this.props.messages.map((msg, index) =>
             <p key={index}> {(msg.username)} {(msg.content)}</p>
-        );    
+        );
         return (
-            <p> {message} </p> 
-            // <ul> {message} </ul> 
+            <div id="message-list">
+                {
+                    this.props.messages.map((message) => {
+                        return (
+                            <Message key={message.id} message={message} />
+                        )
+                    })
+                }
+            </div>
         );
     }
 }
